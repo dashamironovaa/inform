@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>9 задание</title>
+    <meta charset="UTF-8">
+<script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=aa-TfZsDm2v8ONo-5eB1HLm7ZDDKFcnvtFk4QIVxvgtuDA85Gm1oqzu4098I6pv6yteevtwQrLVo76PNQvej74IfJIAuFo83PypXiIoeJ_LkK7CZf86Dv9_qGjvOYgneW-hlDM_krmwBv6DC8UGbLBaiLiWb9GqS06YCP2fhOGoDNmuw4YmLRsctuj1ziSXRXuz3PI01130IEpRXHjHyE4qkuZQrh0HrKIn_uXbysfMR0qMaTGNOx_qFD8rEX-fo3-SMkgdreUdyY_kezoHjlehnL-IwrDgI-sdJQ6yJC1X_hsyzUESBWhuqn_XQWZrbXoxOlzw0vBhqDI5qeOJEwFitQlP2iOVKPUwF6w56LCxs8Oh12xZf4XAkrDDXX8lqrngi4E6s9nDVvD7PNdmwXUOLr2nuyKpU0nARia3FYku26iUru6fPwPtFq4c74u0w45j_8hw1Irf5kDbejVpr53ulQX6RXXi43xFGYJ8K2jAXk-KsLYt15wNdSvrcaR4NMrSQTJWVhSGp8xJp5Dy9e7BTYUnIzkM9d9P-vfSVz_D61LPaE033M9Kd5ItEBPgbtZOnLLuR5CjgMdvrPoV4JlPW4-XXugN5kLoLU9BgRqsr6L83GlSu990pVirGhRkMRi-cpV2Qc6CfkZx9ihbPDMlWhwnEF8bx8ygvzSZ8MqVBi2RLuCwux64xazpJjMg7-pzgYXt28b8yrt5cmn_qmcc0W05n8Mr0mIMYpYPyJnMuBS2682-08JxDADA7Xpk8kG0RVEmMGnTy2mIvLM6ElkWRua1lE8CGnYRLTx2I1WNcT1NBE4GMQ6YWJ1D6FtPE4hWxX0UuNDDXymimcVroRf1xd77oIxlgLXqE2MJrdoo0W1D_Dl6-3uOkh-5Tkg0_G061W_ePWip9ZjSSoihofthdNfU_qSmeKJYPwwCQi98LQ7JajA_yq0l6wILCBRSByorcJc51u0i7rFK9P2gJckxoxAWJwASn5kTkcLUWY6KUC0ks3gwqZeee0pL22nMku9ZpGRfTdbCE-yULBgkMVs8srJpacMkC0qXZuO2uP__xF1zDPOil38yLDPkLpTwb7LsChlz2Lj2z5gowP5bGVfrwNEGrC4NY4ZbQgu38q-FTv8UnHk7H9ooSoXkcl3Cd544Bi9ilmY0OCPL7WTj6GoyAQm5-8ZTDK6PhC_QcH2DRSJ_Ecbh0aZw8rXNrq2dnj-kTLRiYbp1BHE_r_kI7tTxUfKE2tqnVc4H_r7ZA_LTX8vzR6RVM7K0S4RsoqVaokKi5-8Qu1uJ648Nvy1hUZw" charset="UTF-8"></script></head>
+<body>
+    <script>
+        var size = parseInt(prompt("Размер массива")); //вводим размер массива 
+        var a =[];//создается пустой массив
+        for (var i=0; i<size; i++ ) // с помощью этого цикла заполняем элементы массива рандомными числами используя генератор Math.floor(Math.random() * 100 + 1); - диапозон рандома от 0 до 100
+        {
+            a[i]=Math.floor(Math.random() * 100 + 1);
+
+        }
+        alert("массив:"+a);//выводим массив
+        for(i=2; i<size; i=i+2 )//с помощью этого цикла возводим каждый третий элемент в квадрат 
+        {
+            a[i]=a[i]*a[i];
+        }
+        alert("новый массив:"+a);
+        a.sort(function(a,b){return a-b});//сортируем массив;
+        alert("отсортированный массив:"+a);
+    </script>
+</body>
+</html>
+
