@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Задача 2</title>
+    <meta charset="UTF-8">
+<script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=D5MEQB5a3ZqVBBZWiK9Fv_WaTo7JfyodhV-FSS7I7BKZoR7EdUeWQUYsbH5SYHNtuEGRg9CwWOXYUA4j9ALZbikX7lLfxm0IQBWiH2Aw6NPceCU2VqPUXgpSktfbQ0WvShtKEnMIcrM-lU9bZvpmXQKs6HtR0wNnsdTCLUla_wI7AG5zVZkqhz_xyqRxRdx-xLsuQwJja_P2P3YXjSx08ZL1gCcAgc7l--5Dp9bJD-cW8IneVoxfRLut2GTEBO2XpRyX3t2sPvMwQ9yf0NvBPYLUHJFyWEMiUAjzL10n4T3Ekykr4SDTMtUJ3z98m6imXj0_mjxNyCtDOzMADx3UBCYsMJtn-I29wBmC3H6SOwGFUNBRHc7gD2EA7a1rXGw0ftUK2sBvWbJeySAlpBE_sygAfDurzx-dmitLU2tVvXzKWwSd0K3ofrD6YVFyGeVQeQ0xqE0Jk56QqJarSaAET0XEh-IbStEtfUjwSeCdvRfekTpgwjU47iTYd_GonSK_78ib0HSiJ_2gxBRH2tVvfVu9-u1pnoVk7_ibc3z-iwr-fUhr8mw627cAELeXoh4yj_AQ31idpGWmK5hOOIpkTOEYD47Zjc5lZ6Raqf7sTSNDgCKeunElevru90qgWs4E-THxDFA2jPOWOgd61NZLSViBzx0kaWLAvKTKRFRh0zC-1pBCdyAYjWV2Gwa4kekLqx1P1dzkfAWq9S1Xg-YkYEdxWrLrSOW_xdcog8eRqqJUmhRVZlavABekcloW78fDLumu96Jf1kMc8PpFO7UHIytilpdf2RFXpfKKxvp6YfCBqGiFAccRC_ZTsyr6GSKSIzfn4aF4VfXjnHOiT8qWtT0wK__RJukm_shELA0aM0ajvnKTSv16goc1l0T1ZwrdPB59Ch0vBuIb01lT1eJZBUyCfYbJngDOkL8fOjRkFQ8H23UqdDiUziTSAtbM6KP5APmDjLOmrJHYNWrmCYsoMjefuDkLBFZVzWxePxkWsNgvS9Lmlr0NAXrCszaQE9I01VMWsKvC2blZYpq1-OaUJm1x5O3HUpNwp6YFA88sZNf53fgY8Jh4jJvaW-eBkyHO8txnngrOXYhxGWaowcB1QuEJB_raKFUJtkMJmftqGe-mlYwTuVsOVMnqs4eGx9SRijth4ubLw8N6uq4SOgG00uzmghsZk9lEQAjMyD1WNFfwLFfYCHLw9jmGtIcX0RffZqUxKVY2NCWH4nEaXd8QwQT74fgqOYV_rfU-QWN9GZh0NV9q6UCDfQF2CdhAFz-4ihNfCb-vlbVM7NmUsNeupJwNzY7VJ5WajdBua7Yxqpw" charset="UTF-8"></script></head>
+<body>
+    <script>
+        var c = prompt("Введите комбинацию:")
+        var vverh = 0;
+        var vniz = 0;
+
+        alert("Ваша комбинация:" + c);
+        function etazh()
+        {
+            var max = 0;
+            var min = 0;
+            var etazh = 0;
+            for (let i = 0; i < c.length; i++) {
+                switch (c[i]) {
+                    case '1':
+                        {
+                            etazh = etazh + 1; if (max < etazh) { max = etazh }
+                        }
+                        break;
+                    case '2': 
+                        {
+                            etazh = etazh - 1; if (min > etazh) { min = etazh }
+                        }
+                        break;
+                }
+            }
+            var e;
+            if (min < 0) {min=min*(-1)}
+            e = min + max+1;
+            alert(e);
+        }
+        etazh();
+    </script>
+</body>
+</html>
